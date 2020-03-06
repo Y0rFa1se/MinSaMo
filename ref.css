@@ -1,0 +1,939 @@
+@font-face {
+font-family: 'Binggrae';
+font-weight: 400;
+font-style: normal;
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+
+}
+
+html {
+background: linear-gradient(to bottom, #2B2542, #3d2f65);
+height: auto !important;
+
+}
+
+body {
+letter-spacing: -0em !important;
+background: transparent;
+font-family: 'Binggrae';
+
+}
+
+/* 눈오는 효과 */
+
+body {
+
+background: transparent;
+
+animation: snow 20s linear infinite;
+
+
+
+/*백그라운드 이미지 원근감느낌 이미지*/
+
+background-image:url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'),
+url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
+
+}
+
+/*뒷배경 움직이는 애니메이션*/
+
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+
+}
+
+/* 위로 */
+#movetotop img {
+    display:none
+}
+#movetotop {
+    display: inline-block;
+    opacity:1;
+    background: url("https://cdn.discordapp.com/attachments/610746666999349281/627790174012571649/2.png");
+    width: 150px;
+    height: 140px;
+    background-size: contain;
+}
+
+/* 광고 */
+header #header-bar #header-menu-left, header #header-bar #header-menu-right{border: 0px;}
+header #header-bar #header-top-notice strong.notice-badge{display:none;}
+
+
+/* 전체 쉐도우 */
+
+header #header-bar>.row,
+#main .menu-wrapper,
+#main #main-content>div.frame {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* 로고밑 NAV bar */
+
+header #header-bar>.row {
+  border-top: 4px solid #3d2f65;
+  border-right: none;
+  border-bottom: none;
+}
+
+/* 헤더 배너 */
+header .row>div:nth-child(1)>a {
+
+  display: block;
+
+  width: 145px;
+
+  height: 50px;
+
+  background: url() no-repeat;
+
+  background-size: auto 50px;
+
+}
+
+
+
+header .row>div:nth-child(1)>a>img {
+
+  display: none;
+
+
+
+    filter: grayscale(100%);
+
+  opacity: 0.8;
+
+}
+
+/* 검색폼 보더 */
+
+header #right-search-form>input[type=text] {
+
+    border: 4px solid #3d2f65;
+
+    border-radius: 20px;
+
+}
+
+
+/* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
+
+#main .menu-wrapper>.header {
+  background: #3d2f65;
+}
+
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  color: white;
+}
+
+.fa-square:before {
+  color: #ffcc4a;
+}
+
+header #header-bar>.row,
+#main .menu-wrapper,
+#main #main-content>div.frame {
+  border-right: none;
+  border-bottom: none;
+}
+
+#main .menu-wrapper {
+  border: none;
+}
+
+/* 헤더 검색 버튼 */
+
+header #right-search-form>#right-search-btn {
+  color: #ffcc4a;
+}
+
+header #right-search-form>#right-search-btn {
+
+    color: #ffcc4a;
+
+}
+
+/* 헤더 [광고]배경색 */
+
+header #header-bar #header-top-notice strong.notice-badge {
+  background: #3d2f65;
+}
+
+/* fa색상 */
+
+header #header-bar .fa {
+  color: #3d2f65;
+}
+
+/* 스트리머 게시판 상단 정보 글씨색상 */
+
+#board-info #board-info-bottom a {
+  color: #3d2f65;
+}
+
+/* 좌측메뉴 숏컷링크 글씨 색상 */
+
+#main .menu-wrapper>a>em {
+  color: #ffcc4a;
+}
+
+/* 좌측메뉴 메뉴사이의 공간 색상 */
+
+#main .menu-wrapper .spacer {
+  background: #ffffff;
+  height: 0.15em;
+}
+
+/* 게시글 관련부분 */
+
+#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+  width: 120px !important;
+}
+
+#article-list #article-list-category {
+  border-top: 0px solid #2B2542;
+  background: white;
+}
+
+#article-list #article-list-category>a {
+  background: white;
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+  background-color: #2B2542;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+  color: #2B2542;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+  color: #2B2542;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+  background-color: #2B2542;
+  border-color: #2B2542;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  color: #7366a8;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  color: #7366a8;
+}
+
+#article-content-wrapper>.header {
+  border-top: 0px solid #7366a8;
+}
+
+#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+  color: #7366a8;
+}
+
+#article-info>h2 {
+  font-weight: bold;
+}
+
+#article-info>h2>span.category {
+  color: #7366a8 !important;
+}
+
+#article-reply-area>.header h5 {
+  color: #7366a8;
+}
+
+#main .menu-wrapper>a {
+  padding: 0.5em 1.4em 0.5em 0.7em !important;
+}
+
+a {
+  color: #ffcc4a;
+}
+
+span.a-badge i.fa.fa-info-circle {
+  color: #ffcc4a;
+}
+
+/* footer */
+
+#article-list>.article-list-row {
+  border-right: none;
+}
+
+#article-list #article-list-menu {
+  box-sizing: border-box;
+  width: unset;
+  margin: 20px;
+}
+
+#article-list #boardSearchForm {
+  padding-bottom: 20px;
+  height: unset;
+}
+
+.btn-primary {
+  background: #3d2f65; !important;
+}
+
+/* footer */
+ a{color:#ffffff;}
+
+
+/* 댓글란 */
+#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply>.reply-header{
+
+background : #3d2f65;
+
+}
+
+
+/* 게시글 추천 */
+
+
+
+.btn-outline-success {
+
+    color: #ffcc4a;
+
+    border-color: #ffcc4a;
+
+}
+
+/* 글 추천 수 */
+
+
+
+#article-list>.article-list-row>.item>.list-header>span {
+
+    background-color: #ffcc4a;
+
+}
+
+
+
+/* 댓글 수 */
+
+
+
+#article-list>.article-list-row>.item>a.list-title>small.comment-count {
+
+    color: #2B2542;
+
+}
+
+/* 접속자 수 */
+
+
+
+#board-info #viewers-area {
+
+    color: #473b74;
+}
+
+
+
+#board-info #viewers-area #viewers:before {
+
+    content: " ";
+
+    cursor: text;
+
+}
+
+
+
+#board-info #viewers-area #viewers:after {
+
+    content: "명이 헤롱헤롱!";
+
+    cursor: text;
+
+}
+
+.vote-btn[data-type="up"] {
+
+  border: none;
+
+  font-size: 0;
+
+  outline: 0 !important;
+
+}
+
+
+
+.vote-btn[data-type="up"]:hover {
+
+  background: none !important;
+
+}
+
+
+
+.vote-btn[data-type="up"]::before {
+
+  display: inline-block;
+
+  background: white;
+
+  border: solid #554a82 1px;
+
+  float: left;
+
+  width: 60px;
+
+  height: 60px;
+
+  border-radius: 60px;
+
+  font-size: 26pt;
+
+  content: "\f164";
+
+  padding-top: 17px;
+
+  padding-left: 2px;
+
+  font: normal 24px/1 FontAwesome;
+
+  -moz-transition:color .2s ease;
+
+  -o-transition:color .2s ease;
+
+  -ms-transition:color .2s ease;
+
+  -webkit-transition:color .2s ease;
+
+  transition:color .2s ease;
+
+}
+
+
+
+.vote-btn[data-type="up"]:hover::before {
+
+  background: #3d2f65;
+
+  color: white;
+
+}
+
+
+
+
+
+.vote-btn[data-type="up"]:focus::before {
+
+  color: #3d2f65;
+
+}
+
+
+
+.vote-btn[data-type="up"]:focus:hover::before {
+
+  color: white;
+
+}
+
+
+
+.vote-btn[data-type="up"] span {
+
+  float: left;
+
+  padding-top: 14px;
+
+  padding-left: 15px;
+
+  font-size: 22px;
+
+  color: #3d2f65;
+
+}
+
+
+/* 모든 항목 focus시 아웃라인 제거 */
+
+*:focus { outline: none !important; }
+
+/* 라이브 표시 */
+
+#board-info h1 .badge-live {
+display: none;
+}
+
+/* 하트 키우기 */
+small.favo i.fa.fa-heart {
+
+    animation: heartbeat 1s infinite;
+
+}
+
+/* 하트 색 */
+
+small.favo i.fa.fa-heart { color:#ff5a5a; }
+
+
+/* 별 색 */
+
+span.a-badge i.fa.fa-star { color:#FFCC00; }
+
+@keyframes heartbeat {
+
+    0% { transform: scale(1); }
+
+    30% { transform: scale(1.25); }
+
+    42% { transform: scale(0.9); }
+
+    60% { transform: scale(1.15); }
+
+    85% { transform: scale(0.95); }
+
+    100% { transform: scale(1); }
+
+}
+
+/* 상단 게시판 색 */
+ #article-list #article-list-category { border-top-color:#ffffff !important; }
+
+/* 프로필 */
+#board-info{
+   height: auto;
+}
+#board-info #board-info-profile-img{
+   width: 6.5em;
+   background:none;
+   border:2px solid #ffffff;
+   border-radius:50%;
+   float: left !important;
+   position: relative;
+   top: 1px;
+   left: -5px;
+}
+
+#board-info h1>a{
+   color:#2B2542;
+}
+#board-info #viewers-area{
+   color: #696483;
+}
+#board-info #viewers-area .fa-user:before{
+    content: url(https://cdn.discordapp.com/attachments/610746666999349281/627787108064428042/3-2.png);
+    font-size: 16px;
+   position: relative;
+   top: 5px;
+}
+
+/* 트게더 로고 */
+header .row > div:first-child > a {
+
+    background-repeat: no-repeat;
+
+    display: block;
+
+    width: 139px;
+
+    height: 50px;
+
+    background-image: url(https://cdn.discordapp.com/attachments/610746666999349281/633330465180483584/2.png);
+
+}
+
+/* 읽은 글 색상 변경 */
+#article-list>.article-list-row>.item>.list-title>a:visited {
+    color: #857ea6 !important;
+}
+
+/*마우스 포인터*/
+*{
+cursor: url(https://cdn.discordapp.com/attachments/610746666999349281/628631483594309652/93971f9297bd9545.png) 0 0, auto !important;
+}
+#aw0{
+cursor: url(https://cdn.discordapp.com/attachments/610746666999349281/628631483594309652/93971f9297bd9545.png) 0 0, auto !important;
+}
+
+/* 상단 로고 */
+header:before {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: url('https://cdn.discordapp.com/attachments/610746666999349281/633340178689163295/2.png') no-repeat #fff;
+    background-position: center center;
+    position: relative;
+    top: 0;
+    padding: 0;
+    content: " ";
+    margin-bottom: 15px;
+}
+header {
+    padding: 0 0 0.4em 0;
+}
+
+
+/* 설정 버튼 */
+
+
+
+#article-list #article-list-menu>.btn.cog {
+
+    border-radius: 15px;
+
+}
+
+
+
+/* 삭제 버튼 */
+
+
+
+#article-list #article-list-menu>.btn.del {
+
+    border-radius: 15px;
+
+}
+
+/* 게시글 프레임 */
+#main #main-content>div.frame {
+	background: white;
+	border: none;
+}
+
+/* 상단바 */
+header #header-bar {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+header #header-bar>.row {
+	border: 0px solid #3d2f65;
+	border-radius: 12px;
+}
+
+/* 트게더 메뉴 */
+#main .menu-wrapper {
+	background: transparent;
+	border: 0px solid #3d2f65;
+	border-radius: 12px;
+	width: 180px;
+}
+
+#main .menu-wrapper > a {
+	padding: 0em 0em 0em 0em;
+	letter-spacing: -0.05em;
+}
+
+#main .menu-wrapper a:nth-last-child(1) {
+    border-radius: 0px 0px 12px 12px;
+}
+
+#main .menu-wrapper > a:hover {
+	background-color: #ffecbc;
+
+}
+
+#main .menu-wrapper>.header {
+	background: #3d2f65;
+	border-radius: 12px 12px 0 0;
+}
+
+#main .menu-wrapper>a>em,
+#main .menu-wrapper>a>i.fa.fa-square {
+	color: #ffcc4a;
+}
+
+/* 게시글 */
+#article-list>.article-list-row {
+	border: none;
+	transition: 0.2s !important;
+}
+
+#article-list>.article-list-row:hover,
+#article-list>.article-list-row:focus {
+	background-color: #e0daf1;
+	transform: scale(1.02);
+}
+
+#article-list>.article-list-row.hot,
+#article-list>.article-list-row.notice {
+	background-color: #c0b8e2;
+}
+
+#article-list>.article-list-row.hot:hover,
+#article-list>.article-list-row.hot:focus,
+#article-list>.article-list-row.notice:hover,
+#article-list>.article-list-row.notice:focus {
+	background-color: #ffcc4a;
+}
+
+#article-list>.article-list-row>.item>.list-header {
+	border-left: none;
+}
+
+/* 드롭다운 */
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+	opacity: unset;
+	transform: unset;
+	border: 2px solid var(--mainColor);
+	border-radius: 10px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.275);
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+	display: block !important;
+	padding: 8px 0 3px 0px;
+	opacity: 0;
+	transform: scale(0);
+	transform-origin: top;
+	transition: all 0.5s cubic-bezier(0.15, 1.5, 0.1, 1);
+}
+
+.dropdown-menu>li>a {
+	transition: 0.1s;
+}
+
+.dropdown-menu>li>a:hover {
+	background: transparent;
+	transform: scaleX(1.04);
+	transition: 0.1s;
+}
+
+#latestDropdownMenu>li>a>span.delrow,
+#favoriteDropdownMenu>li>a>span.delrow {
+	color: var(--mainColor);
+}
+
+#latestDropdownMenu>li>a>span.delrow:hover,
+#favoriteDropdownMenu>li>a>span.delrow:hover {
+	background: transparent;
+}
+
+#favoriteDropdownMenu>li>a>span.label.label-default {
+	background-color: var(--mainColor);
+}
+
+.dropdown-menu .divider {
+	background-color: var(--mainColor);
+	height: 2px;
+	margin: 3px 0;
+}
+/* 드롭다운 끝 */
+
+/* 게시글 사이 구분선 제거 */
+#article-list>.article-list-row>.item>.list-checkbox,
+#article-list>.article-list-row>.item>.list-header,
+#article-list>.article-list-row>.item>.list-category,
+#article-list>.article-list-row>.item>.list-title,
+#article-list>.article-list-row>.item>.list-blocked,
+#article-list>.article-list-row>.item>.list-time {
+	border:0;
+}
+
+/* 버튼 */
+.btn-primary,
+#article-list #article-list-menu>.btn.best,
+#article-list #article-list-menu>.btn.write {
+	border-radius:15px;
+	border-color: #473b74;
+	background: #473b74;
+	color: #ffffff;
+}
+
+.btn-primary:hover,
+#article-list #article-list-menu>.btn.best:hover,
+#article-list #article-list-menu>.btn.write:hover {
+	border-color: #473b74;
+	/*background: #473b74;*/
+	color:#ffffff;
+	animation: infinite rainbow 7s;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+	padding: 6px 12px;
+}
+
+#article-list #article-list-menu .pagination>li>a {
+	margin-left:1px;
+}
+
+#article-list #article-list-menu .pagination>li>a:hover {
+	transition:.3s ease 0s;
+	color: #473b74;
+	border-color: #473b74;
+	background:#ffffff;
+}
+#article-list #article-list-menu .pagination>li.active > a {
+	color:#ffffff;
+	font-weight:bold;
+}
+#article-list #article-list-menu .pagination>li.active > a:hover {
+	color: #473b74;
+}
+
+#article-list #article-list-menu .pagination>li.active > a,
+#article-list #article-list-menu .pagination>li>a {
+	border-radius: 20px;
+}
+
+
+/* 전체 테두리 */
+header #header-bar>.row,
+#main .menu-wrapper,
+#main #main-content>div.frame {
+	border-top-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-top-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+﻿/* ㅎ */
+﻿
+* 게시글 본문 */
+
+#article-info {
+
+background: white;
+
+border: 2px solid var(--mainColor);
+
+border-bottom: 1px;
+
+margin-top: 0.5em;
+
+}
+
+
+#article-info>h2 {
+
+margin-top: 5px;
+
+margin-left: 5px;
+
+}
+
+
+#article-info #article-info-writer,
+
+#article-content-wrapper>.header>#article-time {
+
+margin-left: 8px;
+
+}
+
+
+#article-content-wrapper>.header>#article-views {
+
+margin-right: 8px;
+
+}
+
+
+#article-content-wrapper {
+
+padding: 0;
+
+background: white;
+
+border: 2px solid var(--mainColor);
+
+border-bottom: 1px;
+
+}
+
+
+#article-content-wrapper>.header {
+
+border-top: none;
+
+border-bottom: 2px solid var(--mainColor);
+
+background: transparent;
+
+}
+
+
+#article-content-wrapper #article-content {
+
+margin: 0.5em;
+
+border: none;
+
+}
+
+
+#article-content-wrapper>.footer {
+
+border-top: 2px solid var(--mainColor);
+
+border-bottom: 2px solid var(--mainColor);
+
+margin-bottom: 0.5em;
+
+background: white;
+
+}
+
+
+#article-neighbor-list {
+
+border: 2px solid var(--mainColor);
+
+background: white;
+
+}
+
+
+#article-neighbor-list>div:hover,
+
+#article-neighbor-list>div:focus {
+
+background: linear-gradient(to right, white, var(--mainColor2), white);
+
+}
+
+
+#article-neighbor-list>div>a,
+
+#article-neighbor-list>div>span.indicator,
+
+#article-neighbor-list>div>span.author {
+
+color: var(--mainColor);
+
+}
+
+
+﻿/* ㅁ */
+﻿
+/* 게시글 추천 수 0 */
+
+#article-list>.article-list-row>.item>.list-header.v0>span,
+
+#article-list>.article-list-row>.item>.list-header.v0>span:hover {
+
+color: transparent !important;
+
+background-color: transparent !important;
+
+}

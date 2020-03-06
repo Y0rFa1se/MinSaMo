@@ -1,0 +1,63 @@
+body {
+  background: rgba(183, 230, 155, 0.84);
+  animation: snow 20s linear infinite;
+  /*눈 이미지*/
+  background-image: url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'),
+    url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
+  font-family: cookierun;
+}
+
+/*뒷배경 움직이는 애니메이션*/
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+
+#banner {
+  text-align: center;
+}
+
+#banner img {
+  width: 150px;
+}
+
+#bar {
+  border: solid 3px white;
+  padding: 15px;
+  color: gray;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#cont {
+  text-align: center;
+}
+
+#contents {
+  border:solid white 3px;
+  display: inline-block;
+  padding : 10px;
+  vertical-align: middle;
+}
+
+#menu {
+  border: solid white 3px;
+  width: 100px;
+  height: 300px;
+  display: inline-block;
+  vertical-align: top;
+  color: gray;
+}
+
+#content {
+  border:solid white 3px;
+  width : 700px;
+  height: 500px;
+  display: inline-block;
+  color: gray;
+}
