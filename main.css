@@ -1,6 +1,9 @@
 @@font-face {
-  font-family: cookierun;
-  src:url(cookierun_regular-webfont.woff)
+  font-family: 'ckr';
+  src :url(cookierun_regular-webfont.woff),
+  url(cookierun_regular-webfont.woff2);
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -9,7 +12,7 @@ body {
   /*눈 이미지*/
   background-image: url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'),
     url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
-  font-family: cookierun;
+  font-family: ckr;
 }
 
 /*뒷배경 움직이는 애니메이션*/
